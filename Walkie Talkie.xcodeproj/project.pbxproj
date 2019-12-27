@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		D162446423B5416200B8199E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162446323B5416200B8199E /* AppDelegate.swift */; };
-		D162446623B5416200B8199E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162446523B5416200B8199E /* SceneDelegate.swift */; };
 		D162446823B5416200B8199E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162446723B5416200B8199E /* ViewController.swift */; };
-		D162446B23B5416200B8199E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D162446923B5416200B8199E /* Main.storyboard */; };
 		D162446D23B5416600B8199E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D162446C23B5416600B8199E /* Assets.xcassets */; };
 		D162447023B5416600B8199E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D162446E23B5416600B8199E /* LaunchScreen.storyboard */; };
+		D162447823B542AD00B8199E /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162447723B542AD00B8199E /* ChatRoom.swift */; };
+		D162447A23B55AA700B8199E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162447923B55AA700B8199E /* Message.swift */; };
+		D162447C23B55B0A00B8199E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162447B23B55B0A00B8199E /* Extensions.swift */; };
+		D162448023B5A57C00B8199E /* StartRecording.aiff in Resources */ = {isa = PBXBuildFile; fileRef = D162447E23B5A57C00B8199E /* StartRecording.aiff */; };
+		D162448123B5A57C00B8199E /* StopRecording.aiff in Resources */ = {isa = PBXBuildFile; fileRef = D162447F23B5A57C00B8199E /* StopRecording.aiff */; };
+		D162448323B5B4A700B8199E /* AudioVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162448223B5B4A700B8199E /* AudioVisualizerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D162446023B5416200B8199E /* Walkie Talkie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Walkie Talkie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D162446323B5416200B8199E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D162446523B5416200B8199E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D162446723B5416200B8199E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D162446A23B5416200B8199E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D162446C23B5416600B8199E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D162446F23B5416600B8199E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D162447123B5416600B8199E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D162447723B542AD00B8199E /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		D162447923B55AA700B8199E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		D162447B23B55B0A00B8199E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D162447E23B5A57C00B8199E /* StartRecording.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = StartRecording.aiff; sourceTree = "<group>"; };
+		D162447F23B5A57C00B8199E /* StopRecording.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = StopRecording.aiff; sourceTree = "<group>"; };
+		D162448223B5B4A700B8199E /* AudioVisualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVisualizerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,27 @@
 		D162446223B5416200B8199E /* Walkie Talkie */ = {
 			isa = PBXGroup;
 			children = (
+				D162447D23B5A56600B8199E /* Ressources */,
 				D162446323B5416200B8199E /* AppDelegate.swift */,
-				D162446523B5416200B8199E /* SceneDelegate.swift */,
 				D162446723B5416200B8199E /* ViewController.swift */,
-				D162446923B5416200B8199E /* Main.storyboard */,
 				D162446C23B5416600B8199E /* Assets.xcassets */,
 				D162446E23B5416600B8199E /* LaunchScreen.storyboard */,
 				D162447123B5416600B8199E /* Info.plist */,
+				D162447723B542AD00B8199E /* ChatRoom.swift */,
+				D162447923B55AA700B8199E /* Message.swift */,
+				D162447B23B55B0A00B8199E /* Extensions.swift */,
+				D162448223B5B4A700B8199E /* AudioVisualizerView.swift */,
 			);
 			path = "Walkie Talkie";
+			sourceTree = "<group>";
+		};
+		D162447D23B5A56600B8199E /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				D162447E23B5A57C00B8199E /* StartRecording.aiff */,
+				D162447F23B5A57C00B8199E /* StopRecording.aiff */,
+			);
+			path = Ressources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D162447023B5416600B8199E /* LaunchScreen.storyboard in Resources */,
+				D162448123B5A57C00B8199E /* StopRecording.aiff in Resources */,
+				D162448023B5A57C00B8199E /* StartRecording.aiff in Resources */,
 				D162446D23B5416600B8199E /* Assets.xcassets in Resources */,
-				D162446B23B5416200B8199E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +159,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D162447C23B55B0A00B8199E /* Extensions.swift in Sources */,
+				D162447823B542AD00B8199E /* ChatRoom.swift in Sources */,
+				D162447A23B55AA700B8199E /* Message.swift in Sources */,
+				D162448323B5B4A700B8199E /* AudioVisualizerView.swift in Sources */,
 				D162446823B5416200B8199E /* ViewController.swift in Sources */,
 				D162446423B5416200B8199E /* AppDelegate.swift in Sources */,
-				D162446623B5416200B8199E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D162446923B5416200B8199E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D162446A23B5416200B8199E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D162446E23B5416600B8199E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -285,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2TE7AHNP9P;
 				INFOPLIST_FILE = "Walkie Talkie/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2TE7AHNP9P;
 				INFOPLIST_FILE = "Walkie Talkie/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
