@@ -3,35 +3,57 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41880846FEA409401273EE18 /* Pods_Walkie_Talkie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656E8015BFDFB3FEF489C0D4 /* Pods_Walkie_Talkie.framework */; };
 		D162446423B5416200B8199E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162446323B5416200B8199E /* AppDelegate.swift */; };
 		D162446823B5416200B8199E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162446723B5416200B8199E /* ViewController.swift */; };
 		D162446D23B5416600B8199E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D162446C23B5416600B8199E /* Assets.xcassets */; };
 		D162447023B5416600B8199E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D162446E23B5416600B8199E /* LaunchScreen.storyboard */; };
-		D162447823B542AD00B8199E /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162447723B542AD00B8199E /* ChatRoom.swift */; };
 		D162447A23B55AA700B8199E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162447923B55AA700B8199E /* Message.swift */; };
 		D162447C23B55B0A00B8199E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162447B23B55B0A00B8199E /* Extensions.swift */; };
 		D162448023B5A57C00B8199E /* StartRecording.aiff in Resources */ = {isa = PBXBuildFile; fileRef = D162447E23B5A57C00B8199E /* StartRecording.aiff */; };
 		D162448123B5A57C00B8199E /* StopRecording.aiff in Resources */ = {isa = PBXBuildFile; fileRef = D162447F23B5A57C00B8199E /* StopRecording.aiff */; };
 		D162448323B5B4A700B8199E /* AudioVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162448223B5B4A700B8199E /* AudioVisualizerView.swift */; };
+		D1B78A1723B9680100E32728 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D1B78A1023B9680100E32728 /* es.lproj */; };
+		D1B78A1823B9680100E32728 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D1B78A1123B9680100E32728 /* fr.lproj */; };
+		D1B78A1923B9680100E32728 /* GothamRoundedMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1B78A1223B9680100E32728 /* GothamRoundedMedium.ttf */; };
+		D1B78A1A23B9680100E32728 /* GothamRoundedBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1B78A1323B9680100E32728 /* GothamRoundedBold.ttf */; };
+		D1B78A1C23B9680100E32728 /* GothamRoundedBook.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1B78A1523B9680100E32728 /* GothamRoundedBook.ttf */; };
+		D1B78A1D23B9680100E32728 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D1B78A1623B9680100E32728 /* en.lproj */; };
+		D1B78A2223B97E4A00E32728 /* LengthUnitLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B78A2123B97E4A00E32728 /* LengthUnitLayer.swift */; };
+		D1B78A2A23B9A8DA00E32728 /* DYScrollRulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B78A2923B9A8DA00E32728 /* DYScrollRulerView.swift */; };
+		D1D173D823B6DFB5006785A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D173D723B6DFB5006785A9 /* Constants.swift */; };
+		D1D173DF23B7F211006785A9 /* UDPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D173DE23B7F211006785A9 /* UDPSocket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55F3994FB2707EB26B190978 /* Pods-Walkie Talkie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walkie Talkie.debug.xcconfig"; path = "Target Support Files/Pods-Walkie Talkie/Pods-Walkie Talkie.debug.xcconfig"; sourceTree = "<group>"; };
+		656E8015BFDFB3FEF489C0D4 /* Pods_Walkie_Talkie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Walkie_Talkie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D92BCC1F0E131192BBBEEC0 /* Pods-Walkie Talkie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walkie Talkie.release.xcconfig"; path = "Target Support Files/Pods-Walkie Talkie/Pods-Walkie Talkie.release.xcconfig"; sourceTree = "<group>"; };
 		D162446023B5416200B8199E /* Walkie Talkie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Walkie Talkie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D162446323B5416200B8199E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D162446723B5416200B8199E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D162446C23B5416600B8199E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D162446F23B5416600B8199E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D162447123B5416600B8199E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D162447723B542AD00B8199E /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		D162447923B55AA700B8199E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		D162447B23B55B0A00B8199E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D162447E23B5A57C00B8199E /* StartRecording.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = StartRecording.aiff; sourceTree = "<group>"; };
 		D162447F23B5A57C00B8199E /* StopRecording.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = StopRecording.aiff; sourceTree = "<group>"; };
 		D162448223B5B4A700B8199E /* AudioVisualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVisualizerView.swift; sourceTree = "<group>"; };
+		D1B78A1023B9680100E32728 /* es.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = es.lproj; sourceTree = "<group>"; };
+		D1B78A1123B9680100E32728 /* fr.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fr.lproj; sourceTree = "<group>"; };
+		D1B78A1223B9680100E32728 /* GothamRoundedMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamRoundedMedium.ttf; sourceTree = "<group>"; };
+		D1B78A1323B9680100E32728 /* GothamRoundedBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamRoundedBold.ttf; sourceTree = "<group>"; };
+		D1B78A1523B9680100E32728 /* GothamRoundedBook.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamRoundedBook.ttf; sourceTree = "<group>"; };
+		D1B78A1623B9680100E32728 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
+		D1B78A2123B97E4A00E32728 /* LengthUnitLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthUnitLayer.swift; sourceTree = "<group>"; };
+		D1B78A2923B9A8DA00E32728 /* DYScrollRulerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYScrollRulerView.swift; sourceTree = "<group>"; };
+		D1D173D723B6DFB5006785A9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D1D173DE23B7F211006785A9 /* UDPSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDPSocket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +61,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41880846FEA409401273EE18 /* Pods_Walkie_Talkie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F57CC851269BAEC1F70F20B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55F3994FB2707EB26B190978 /* Pods-Walkie Talkie.debug.xcconfig */,
+				6D92BCC1F0E131192BBBEEC0 /* Pods-Walkie Talkie.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D162445723B5416200B8199E = {
 			isa = PBXGroup;
 			children = (
 				D162446223B5416200B8199E /* Walkie Talkie */,
 				D162446123B5416200B8199E /* Products */,
+				D1D173D023B6DBFB006785A9 /* Frameworks */,
+				3F57CC851269BAEC1F70F20B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,16 +98,16 @@
 		D162446223B5416200B8199E /* Walkie Talkie */ = {
 			isa = PBXGroup;
 			children = (
-				D162447D23B5A56600B8199E /* Ressources */,
-				D162446323B5416200B8199E /* AppDelegate.swift */,
-				D162446723B5416200B8199E /* ViewController.swift */,
 				D162446C23B5416600B8199E /* Assets.xcassets */,
+				D162447D23B5A56600B8199E /* Ressources */,
+				D1B78A1F23B97A5000E32728 /* Models */,
+				D1B78A1E23B97A4500E32728 /* Controllers */,
+				D1B78A2023B97A7000E32728 /* Views */,
+				D162446323B5416200B8199E /* AppDelegate.swift */,
 				D162446E23B5416600B8199E /* LaunchScreen.storyboard */,
 				D162447123B5416600B8199E /* Info.plist */,
-				D162447723B542AD00B8199E /* ChatRoom.swift */,
-				D162447923B55AA700B8199E /* Message.swift */,
 				D162447B23B55B0A00B8199E /* Extensions.swift */,
-				D162448223B5B4A700B8199E /* AudioVisualizerView.swift */,
+				D1D173D723B6DFB5006785A9 /* Constants.swift */,
 			);
 			path = "Walkie Talkie";
 			sourceTree = "<group>";
@@ -81,10 +115,51 @@
 		D162447D23B5A56600B8199E /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				D1B78A1623B9680100E32728 /* en.lproj */,
+				D1B78A1023B9680100E32728 /* es.lproj */,
+				D1B78A1123B9680100E32728 /* fr.lproj */,
+				D1B78A1323B9680100E32728 /* GothamRoundedBold.ttf */,
+				D1B78A1523B9680100E32728 /* GothamRoundedBook.ttf */,
+				D1B78A1223B9680100E32728 /* GothamRoundedMedium.ttf */,
 				D162447E23B5A57C00B8199E /* StartRecording.aiff */,
 				D162447F23B5A57C00B8199E /* StopRecording.aiff */,
 			);
 			path = Ressources;
+			sourceTree = "<group>";
+		};
+		D1B78A1E23B97A4500E32728 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D162446723B5416200B8199E /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D1B78A1F23B97A5000E32728 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D162447923B55AA700B8199E /* Message.swift */,
+				D1D173DE23B7F211006785A9 /* UDPSocket.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D1B78A2023B97A7000E32728 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D162448223B5B4A700B8199E /* AudioVisualizerView.swift */,
+				D1B78A2123B97E4A00E32728 /* LengthUnitLayer.swift */,
+				D1B78A2923B9A8DA00E32728 /* DYScrollRulerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1D173D023B6DBFB006785A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				656E8015BFDFB3FEF489C0D4 /* Pods_Walkie_Talkie.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D162447423B5416600B8199E /* Build configuration list for PBXNativeTarget "Walkie Talkie" */;
 			buildPhases = (
+				3F45AB00523D51D1B6F0B116 /* [CP] Check Pods Manifest.lock */,
 				D162445C23B5416200B8199E /* Sources */,
 				D162445D23B5416200B8199E /* Frameworks */,
 				D162445E23B5416200B8199E /* Resources */,
+				444594A280F7D27FCCDEBF12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,13 +223,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				D162447023B5416600B8199E /* LaunchScreen.storyboard in Resources */,
+				D1B78A1D23B9680100E32728 /* en.lproj in Resources */,
+				D1B78A1C23B9680100E32728 /* GothamRoundedBook.ttf in Resources */,
+				D1B78A1823B9680100E32728 /* fr.lproj in Resources */,
+				D1B78A1923B9680100E32728 /* GothamRoundedMedium.ttf in Resources */,
+				D1B78A1A23B9680100E32728 /* GothamRoundedBold.ttf in Resources */,
 				D162448123B5A57C00B8199E /* StopRecording.aiff in Resources */,
 				D162448023B5A57C00B8199E /* StartRecording.aiff in Resources */,
+				D1B78A1723B9680100E32728 /* es.lproj in Resources */,
 				D162446D23B5416600B8199E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F45AB00523D51D1B6F0B116 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Walkie Talkie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		444594A280F7D27FCCDEBF12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Walkie Talkie/Pods-Walkie Talkie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Walkie Talkie/Pods-Walkie Talkie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Walkie Talkie/Pods-Walkie Talkie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D162445C23B5416200B8199E /* Sources */ = {
@@ -160,11 +285,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D162447C23B55B0A00B8199E /* Extensions.swift in Sources */,
-				D162447823B542AD00B8199E /* ChatRoom.swift in Sources */,
 				D162447A23B55AA700B8199E /* Message.swift in Sources */,
 				D162448323B5B4A700B8199E /* AudioVisualizerView.swift in Sources */,
+				D1D173D823B6DFB5006785A9 /* Constants.swift in Sources */,
 				D162446823B5416200B8199E /* ViewController.swift in Sources */,
+				D1D173DF23B7F211006785A9 /* UDPSocket.swift in Sources */,
+				D1B78A2A23B9A8DA00E32728 /* DYScrollRulerView.swift in Sources */,
 				D162446423B5416200B8199E /* AppDelegate.swift in Sources */,
+				D1B78A2223B97E4A00E32728 /* LengthUnitLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +346,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/Walkie Talkie/Frameworks/lame.framework\"";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -232,12 +361,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -278,6 +409,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/Walkie Talkie/Frameworks/lame.framework\"";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -286,11 +418,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -298,17 +432,21 @@
 		};
 		D162447523B5416600B8199E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55F3994FB2707EB26B190978 /* Pods-Walkie Talkie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2TE7AHNP9P;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Walkie Talkie/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "sebmenozzi.Walkie-Talkie";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sebmenozzi.Walkie-Talkie2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -316,17 +454,21 @@
 		};
 		D162447623B5416600B8199E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D92BCC1F0E131192BBBEEC0 /* Pods-Walkie Talkie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2TE7AHNP9P;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Walkie Talkie/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "sebmenozzi.Walkie-Talkie";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sebmenozzi.Walkie-Talkie2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

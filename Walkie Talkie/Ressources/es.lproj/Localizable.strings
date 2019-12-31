@@ -1,0 +1,84 @@
+/* 
+  Localizable.strings
+  LiveFeed
+
+  Created by Sebastien Menozzi on 30/07/2019.
+  Copyright © 2019 Sebastien Menozzi. All rights reserved.
+*/
+
+"Play" = "Jugar";
+"Change City" = "Cambiar localización";
+
+"Settings" = "Configuración";
+"Add" = "Añadir";
+"Cancel" = "Cancelar";
+
+"PICTURES" = "FOTOS";
+"Profile" = "Foto de perfil";
+"Background" = "Fundo de pantalla";
+
+"ACCOUNT INFO" = "INFORMACIONS";
+"Username" = "Usuario";
+"Name" = "Nombre";
+"Gender" = "Género";
+"Select Your Gender" = "Seleccionar el género";
+"Male 🙎‍♂️" = "Hombre 🙎‍♂️";
+"Female 🙎‍♀️" = "Mujer 🙎‍♀️";
+"Not Specified" = "No especificado";
+"Birthday 🎂" = "Cumple' 🎂";
+
+"ABOUT ME" = "SOBRE TI";
+"Biography" = "Biografia";
+"Website" = "Sitio Web";
+"Location" = "Lugar";
+
+"SOCIAL LINKS" = "REDES SOCIALES";
+
+"NOTIFICATIONS" = "NOTIFICACIONES";
+"New Questions" = "Nuevas preguntas";
+"New Comments" = "Nuevos comentarios";
+"New Likes" = "Nuevas likes";
+"New Messages" = "Nuevos mensajes";
+"New Followers" = "Nuevos seguidores";
+"New Mentions" = "Nuevas menciones";
+
+"PRIVACY" = "PRIVACIDAD";
+"Blocked Accounts 🚫" = "Cuentas bloqueadas 🚫";
+"Private 🔒" = "Privido 🔒";
+"Allow Anonymous Questions" = "Permitir el anonimato";
+
+"APP" = "APP";
+"Dark mode 🌙" = "Modo noche 🌙";
+"Add us on Snapchat" = "Seguirnos en Snapchat";
+"Follow us on Instagram" = "Seguirnos en Instagram";
+"Contact us" = "Contactarnos";
+"Terms of Use" = "Condiciones de uso";
+
+"Log Out" = "Cerrar la sesión";
+"Delete My Account" = "Borrar mi cuenta";
+
+"posts" = "publicationes";
+"followers" = "seguidores";
+"following" = "siguiendo";
+"Ask anything" = "Pregunta algo";
+"What's on your mind?" = "¿Qué tal?";
+"Follows You" = "Te suigue";
+"Friends ❤️" = "Amigos ❤️";
+"No posts have been posted yet 👻" = "Nada ha sido publicado 👻";
+
+"Follow" = "Seguir";
+"Following" = "Seguiendo";
+"Join" = "Unirse";
+"Joined" = "Unido";
+
+"New Chat" = "Nuevo Chat";
+"VISIBILITY" = "VISIBILIDAD";
+"members" = "miembros";
+"CHAT NAME" = "NOMBRE DEL CHAT";
+"LOCATION" = "LOCALIZACION";
+"Location enabled" = "Localización activada";
+"Select members 👆" = "Selectionar miembros 👆";
+
+"Search Users" = "Buscar usuarios";
+"Search Followers" = "Buscar seguidores";
+"Search Following" = "Buscar siguiendo";
