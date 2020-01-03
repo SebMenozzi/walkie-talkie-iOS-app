@@ -6,85 +6,11 @@
   Copyright © 2019 Sebastien Menozzi. All rights reserved.
 */
 
-"Play" = "Play";
-"Change City" = "Change City";
-
+"PUSH TO TALK" = "PUSH TO TALK";
+"CONNECTED" = "CONNECTED";
 "Settings" = "Settings";
-"Add" = "Add";
-"Cancel" = "Cancel";
-
-"PICTURES" = "PICTURES";
-"Profile" = "Profile";
-"Background" = "Background";
-
-"ACCOUNT INFO" = "ACCOUNT INFO";
-"Username" = "Username";
-"Name" = "Name";
-"Gender" = "Gender";
-"Select Your Gender" = "Select Your Gender";
-"Male 🙎‍♂️" = "Male 🙎‍♂️";
-"Female 🙎‍♀️" = "Female 🙎‍♀️";
-"Not Specified" = "Not Specified";
-"Birthday 🎂" = "Birthday 🎂";
-
-"ABOUT ME" = "ABOUT ME";
-"Biography" = "Biography";
-"Website" = "Website";
-"Location" = "Location";
-
-"SOCIAL LINKS" = "SOCIAL LINKS";
-
-"NOTIFICATIONS" = "NOTIFICATIONS";
-"New Questions" = "New Questions";
-"New Comments" = "New Comments";
-"New Likes" = "New Likes";
-"New Messages" = "New Messages";
-"New Followers" = "New Followers";
-"New Mentions" = "New Mentions";
-
-"PRIVACY" = "PRIVACY";
-"Blocked Accounts 🚫" = "Blocked Accounts 🚫";
-"Private 🔒" = "Private 🔒";
-"Allow Anonymous Questions" = "Allow Anonymous Questions";
-
 "APP" = "APP";
-"Dark mode 🌙" = "Dark mode 🌙";
 "Add us on Snapchat" = "Add us on Snapchat";
 "Follow us on Instagram" = "Follow us on Instagram";
 "Contact us" = "Contact us";
 "Terms of Use" = "Terms of Use";
-
-"Log Out" = "Log Out";
-"Delete My Account" = "Delete My Account";
-
-"posts" = "posts";
-"followers" = "followers";
-"following" = "following";
-"Ask anything" = "Ask anything";
-"What's on your mind?" = "What's on your mind?";
-"Follows You" = "Follows You";
-"Friends ❤️" = "Friends ❤️";
-"No posts have been posted yet 👻" = "No posts have been posted yet 👻";
-
-"Follow" = "Follow";
-"Following" = "Following";
-"Join" = "Join";
-"Joined" = "Joined";
-
-"New Chat" = "New Chat";
-"VISIBILITY" = "VISIBILITY";
-"members" = "members";
-"CHAT NAME" = "CHAT NAME";
-"LOCATION" = "LOCATION";
-"Location enabled" = "Location enabled";
-"Select members 👆" = "Select members 👆";
-
-"Search Users" = "Search Users";
-"Search Followers" = "Search Followers";
-"Search Following" = "Search Following";
-
-"Clear Cache" = "Clear Cache";
-"Restart is needed" = "Restart is needed";
-"We need to restart the app to clear the cache.\n Please reopen the app after this." = "We need to restart the app to clear the cache.\n Please reopen the app after this.";
-"Close Now" = "Close Now";
-"Later" = "Later";

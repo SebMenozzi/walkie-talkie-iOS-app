@@ -16,10 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = ViewController()
+        window?.makeCorner(withRadius: 5)
+        window?.rootViewController = AppNavigationController(rootViewController: ViewController())
+        
+        AppStoreReviewManager.instance.incrementAppRuns()
         
         return true
     }
 
 }
-

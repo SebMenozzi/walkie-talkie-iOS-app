@@ -17,11 +17,11 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Please allow the microphone usage.</string>
+	<string>Please allow the microphone to enable your voice to be transmitted to others on the same frequency. Your voice won&apos;t be recorded in any database.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>GothamRoundedBold.ttf</string>

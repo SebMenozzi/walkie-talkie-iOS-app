@@ -6,85 +6,11 @@
   Copyright © 2019 Sebastien Menozzi. All rights reserved.
 */
 
-"Play" = "Jouer";
-"Change City" = "Changer de ville";
-
+"PUSH TO TALK" = "APPUYEZ POUR PARLER";
+"CONNECTED" = "CONNECTES";
 "Settings" = "Paramètres";
-"Add" = "Ajouter";
-"Cancel" = "Annuler";
-
-"PICTURES" = "PHOTOS";
-"Profile" = "Photo de profil";
-"Background" = "Photo de fond";
-
-"ACCOUNT INFO" = "INFORMATIONS";
-"Username" = "Nom d'utilisateur";
-"Name" = "Nom";
-"Gender" = "Genre";
-"Select Your Gender" = "Sélectionnez votre genre";
-"Male 🙎‍♂️" = "Homme 🙎‍♂️";
-"Female 🙎‍♀️" = "Femme 🙎‍♀️";
-"Not Specified" = "Non spécifié";
-"Birthday 🎂" = "Anniv' 🎂";
-
-"ABOUT ME" = "A PROPOS";
-"Biography" = "Biographie";
-"Website" = "Site Web";
-"Location" = "Lieu";
-
-"SOCIAL LINKS" = "RESEAUX SOCIAUX";
-
-"NOTIFICATIONS" = "NOTIFICATIONS";
-"New Questions" = "Nouvelles Questions";
-"New Comments" = "Nouveaux Commentaires";
-"New Likes" = "Nouveaux Likes";
-"New Messages" = "Nouveaux Messages";
-"New Followers" = "Nouveaux Abonnés";
-"New Mentions" = "Nouvelles Mentions";
-
-"PRIVACY" = "VIE PRIVEE";
-"Blocked Accounts 🚫" = "Comptes Bloqués 🚫";
-"Private 🔒" = "Privé 🔒";
-"Allow Anonymous Questions" = "Autoriser l'anonymat";
-
 "APP" = "APP";
-"Dark mode 🌙" = "Version sombre 🌙";
 "Add us on Snapchat" = "Ajoute-nous sur Snapchat";
 "Follow us on Instagram" = "Suis-nous sur Instagram";
 "Contact us" = "Contacte-nous";
 "Terms of Use" = "Conditions d'utilisations";
-
-"Log Out" = "Se déconnecter";
-"Delete My Account" = "Supprimer mon compte";
-
-"posts" = "publications";
-"followers" = "abonnées";
-"following" = "abonnements";
-"Ask anything" = "Pose une question";
-"What's on your mind?" = "Quoi de neuf ?";
-"Follows You" = "Te suis";
-"Friends ❤️" = "Amis ❤️";
-"No posts have been posted yet 👻" = "Aucune publication n'a été postée 👻";
-
-"Follow" = "Suivre";
-"Following" = "Abonné";
-"Join" = "Rejoindre";
-"Joined" = "Ajouté";
-
-"New Chat" = "Nouveau Chat";
-"VISIBILITY" = "ACCECIBILITE";
-"members" = "membres";
-"CHAT NAME" = "NOM DU CHAT";
-"LOCATION" = "LOCALISATION";
-"Location enabled" = "Localisation activée";
-"Select members 👆" = "Selectionne des membres 👆";
-
-"Search Users" = "Recherche d'utilisateurs";
-"Search Followers" = "Recherche d'abonnées";
-"Search Following" = "Recherche dans les abonnements";
-
-"Clear Cache" = "Vider le cache";
-"Restart is needed" = "Le redémarrage de l'app est nécessaire";
-"We need to restart the app to clear the cache.\n Please reopen the app after this." = "Nous devons redémarrer l'application pour vider le cache.\n Tu devras ensuite reouvrir l'app.";
-"Close Now" = "Fermer maintenant";
-"Later" = "Plus tard";

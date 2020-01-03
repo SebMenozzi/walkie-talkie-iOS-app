@@ -11,10 +11,10 @@ import UIKit
 fileprivate let TextRulerFont    = UIFont(name: "GothamRounded-Medium", size: 12)!
 fileprivate let RulerLineColor   = UIColor.white
 fileprivate let RulerGap         = 14
-fileprivate let RulerLong        = 45
-fileprivate let RulerShort       = 30
+fileprivate let RulerLong        = 75
+fileprivate let RulerShort       = 60
 fileprivate let TriangleWidth    = 16
-fileprivate let CollectionHeight = 80
+fileprivate let CollectionHeight = 100
 fileprivate let TextColorWhiteAlpha: CGFloat = 1.0
 
 fileprivate func alerts(vc:UIViewController, str:String){
@@ -75,7 +75,7 @@ class DYRulerView: UIView {
         context?.setStrokeColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0)
         
         for i in 0...betweenNumber {
-            context?.move(to: CGPoint.init(x: startX+lineCenterX*CGFloat(i), y: topY))
+            context?.move(to: CGPoint(x: startX + lineCenterX * CGFloat(i), y: topY))
             if i % betweenNumber == 0 {
                 let num = Float(i) * step + minValue
 
@@ -113,12 +113,13 @@ class DYHeaderRulerView: UIView {
     override func draw(_ rect: CGRect) {
         let longLineY = rect.size.height - CGFloat(RulerShort)
         let context = UIGraphicsGetCurrentContext()
+        
         context?.setStrokeColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0)
         context?.setLineWidth(1.0)
         context?.setLineCap(CGLineCap.butt)
         
         context?.move(to: CGPoint.init(x: rect.size.width, y: 0))
-        var numStr:NSString = NSString(format: "%d", headerMinValue)
+        let numStr:NSString = NSString(format: "%d", headerMinValue)
         
         let attribute:Dictionary = [
             NSAttributedString.Key.font: TextRulerFont,
@@ -147,7 +148,7 @@ class DYFooterRulerView: UIView {
         context?.setLineCap(CGLineCap.butt)
         
         context?.move(to: CGPoint.init(x: 0, y: 0))
-        var numStr: NSString = NSString(format: "%d%@", footerMaxValue,footerUnit)
+        let numStr: NSString = NSString(format: "%d%@", footerMaxValue,footerUnit)
         
         let attribute: Dictionary = [
             NSAttributedString.Key.font: TextRulerFont,
@@ -247,6 +248,7 @@ class DYScrollRulerView: UIView {
 
     lazy var lazyUnitLab: UILabel = {
         let zyUnitLab = UILabel()
+        zyUnitLab.font = UIFont(name: "GothamRounded-Medium", size: 22)!
         zyUnitLab.textColor = UIColor.red
         
         return zyUnitLab
@@ -307,7 +309,7 @@ class DYScrollRulerView: UIView {
     @objc func editDone(){
         let currentText:NSString = valueTextField.text! as NSString
         if !self.judgeTextsHasWord(texts: currentText as String){
-            alerts(vc: currentVC!, str: "请输入数字")
+            alerts(vc: currentVC!, str: "Nope")
             return
         }
         valueTextField.resignFirstResponder()

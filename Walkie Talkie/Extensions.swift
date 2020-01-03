@@ -61,3 +61,37 @@ extension Int {
     }
     
 }
+
+extension UIDevice {
+    
+    var hasNotch: Bool {
+        let bottom = UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0
+        return bottom > 0
+    }
+    
+}
+
+extension UITabBar {
+    
+    func show() {
+        self.isHidden = false
+        self.layer.zPosition = 0
+    }
+    
+    func hide() {
+        self.isHidden = true
+        self.layer.zPosition = -1
+    }
+    
+}
+
+extension UIImageView {
+    
+    convenience init(cornerRadius: CGFloat) {
+        self.init(image: nil)
+        self.layer.cornerRadius = cornerRadius
+        self.clipsToBounds = true
+        self.contentMode = .scaleAspectFill
+    }
+    
+}

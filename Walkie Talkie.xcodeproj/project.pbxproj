@@ -8,6 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		41880846FEA409401273EE18 /* Pods_Walkie_Talkie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656E8015BFDFB3FEF489C0D4 /* Pods_Walkie_Talkie.framework */; };
+		D124508023BD40E900361B2F /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124507F23BD40E900361B2F /* UIView+Layout.swift */; };
+		D124508223BD429F00361B2F /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124508123BD429F00361B2F /* SettingsController.swift */; };
+		D124508423BD437A00361B2F /* CustomNavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124508323BD437A00361B2F /* CustomNavigationTitleView.swift */; };
+		D124508623BD46AD00361B2F /* SettingsItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124508523BD46AD00361B2F /* SettingsItemSection.swift */; };
+		D124508823BD46C200361B2F /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124508723BD46C200361B2F /* SettingsSection.swift */; };
+		D124508B23BD473200361B2F /* SubscribableValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124508A23BD473200361B2F /* SubscribableValue.swift */; };
+		D124508D23BD474200361B2F /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124508C23BD474200361B2F /* Weak.swift */; };
+		D124508F23BD474C00361B2F /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124508E23BD474C00361B2F /* AppTheme.swift */; };
+		D124509123BD475800361B2F /* AppThemeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124509023BD475800361B2F /* AppThemeProvider.swift */; };
+		D124509323BD476000361B2F /* Theming.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124509223BD476000361B2F /* Theming.swift */; };
+		D124509523BD48F900361B2F /* AppStoreReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124509423BD48F900361B2F /* AppStoreReviewManager.swift */; };
+		D124509723BD4A1A00361B2F /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124509623BD4A1A00361B2F /* SettingsCell.swift */; };
+		D124509A23BD4A6A00361B2F /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124509923BD4A6A00361B2F /* FloatingButton.swift */; };
+		D124509C23BD4B2D00361B2F /* TableViewTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124509B23BD4B2D00361B2F /* TableViewTitle.swift */; };
+		D124509E23BD678800361B2F /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124509D23BD678800361B2F /* AppNavigationController.swift */; };
+		D12450A023BD6E1200361B2F /* EdgeInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124509F23BD6E1200361B2F /* EdgeInsetLabel.swift */; };
 		D162446423B5416200B8199E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162446323B5416200B8199E /* AppDelegate.swift */; };
 		D162446823B5416200B8199E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D162446723B5416200B8199E /* ViewController.swift */; };
 		D162446D23B5416600B8199E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D162446C23B5416600B8199E /* Assets.xcassets */; };
@@ -33,7 +49,23 @@
 		55F3994FB2707EB26B190978 /* Pods-Walkie Talkie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walkie Talkie.debug.xcconfig"; path = "Target Support Files/Pods-Walkie Talkie/Pods-Walkie Talkie.debug.xcconfig"; sourceTree = "<group>"; };
 		656E8015BFDFB3FEF489C0D4 /* Pods_Walkie_Talkie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Walkie_Talkie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D92BCC1F0E131192BBBEEC0 /* Pods-Walkie Talkie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walkie Talkie.release.xcconfig"; path = "Target Support Files/Pods-Walkie Talkie/Pods-Walkie Talkie.release.xcconfig"; sourceTree = "<group>"; };
-		D162446023B5416200B8199E /* Walkie Talkie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Walkie Talkie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D124507F23BD40E900361B2F /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		D124508123BD429F00361B2F /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		D124508323BD437A00361B2F /* CustomNavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationTitleView.swift; sourceTree = "<group>"; };
+		D124508523BD46AD00361B2F /* SettingsItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItemSection.swift; sourceTree = "<group>"; };
+		D124508723BD46C200361B2F /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
+		D124508A23BD473200361B2F /* SubscribableValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribableValue.swift; sourceTree = "<group>"; };
+		D124508C23BD474200361B2F /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
+		D124508E23BD474C00361B2F /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		D124509023BD475800361B2F /* AppThemeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemeProvider.swift; sourceTree = "<group>"; };
+		D124509223BD476000361B2F /* Theming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theming.swift; sourceTree = "<group>"; };
+		D124509423BD48F900361B2F /* AppStoreReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreReviewManager.swift; sourceTree = "<group>"; };
+		D124509623BD4A1A00361B2F /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		D124509923BD4A6A00361B2F /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
+		D124509B23BD4B2D00361B2F /* TableViewTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTitle.swift; sourceTree = "<group>"; };
+		D124509D23BD678800361B2F /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		D124509F23BD6E1200361B2F /* EdgeInsetLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsetLabel.swift; sourceTree = "<group>"; };
+		D162446023B5416200B8199E /* Walkie-Talkie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Walkie-Talkie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D162446323B5416200B8199E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D162446723B5416200B8199E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D162446C23B5416600B8199E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +109,26 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D124508923BD471D00361B2F /* Theming */ = {
+			isa = PBXGroup;
+			children = (
+				D124508A23BD473200361B2F /* SubscribableValue.swift */,
+				D124508C23BD474200361B2F /* Weak.swift */,
+				D124508E23BD474C00361B2F /* AppTheme.swift */,
+				D124509023BD475800361B2F /* AppThemeProvider.swift */,
+				D124509223BD476000361B2F /* Theming.swift */,
+			);
+			path = Theming;
+			sourceTree = "<group>";
+		};
+		D124509823BD4A5D00361B2F /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				D124509923BD4A6A00361B2F /* FloatingButton.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
 		D162445723B5416200B8199E = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +142,7 @@
 		D162446123B5416200B8199E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D162446023B5416200B8199E /* Walkie Talkie.app */,
+				D162446023B5416200B8199E /* Walkie-Talkie.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,15 +151,19 @@
 			isa = PBXGroup;
 			children = (
 				D162446C23B5416600B8199E /* Assets.xcassets */,
+				D124508923BD471D00361B2F /* Theming */,
 				D162447D23B5A56600B8199E /* Ressources */,
 				D1B78A1F23B97A5000E32728 /* Models */,
 				D1B78A1E23B97A4500E32728 /* Controllers */,
 				D1B78A2023B97A7000E32728 /* Views */,
+				D124509823BD4A5D00361B2F /* Modals */,
 				D162446323B5416200B8199E /* AppDelegate.swift */,
 				D162446E23B5416600B8199E /* LaunchScreen.storyboard */,
 				D162447123B5416600B8199E /* Info.plist */,
 				D162447B23B55B0A00B8199E /* Extensions.swift */,
 				D1D173D723B6DFB5006785A9 /* Constants.swift */,
+				D124507F23BD40E900361B2F /* UIView+Layout.swift */,
+				D124509423BD48F900361B2F /* AppStoreReviewManager.swift */,
 			);
 			path = "Walkie Talkie";
 			sourceTree = "<group>";
@@ -131,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				D162446723B5416200B8199E /* ViewController.swift */,
+				D124508123BD429F00361B2F /* SettingsController.swift */,
+				D124509D23BD678800361B2F /* AppNavigationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -140,6 +198,8 @@
 			children = (
 				D162447923B55AA700B8199E /* Message.swift */,
 				D1D173DE23B7F211006785A9 /* UDPSocket.swift */,
+				D124508523BD46AD00361B2F /* SettingsItemSection.swift */,
+				D124508723BD46C200361B2F /* SettingsSection.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,6 +210,10 @@
 				D162448223B5B4A700B8199E /* AudioVisualizerView.swift */,
 				D1B78A2123B97E4A00E32728 /* LengthUnitLayer.swift */,
 				D1B78A2923B9A8DA00E32728 /* DYScrollRulerView.swift */,
+				D124508323BD437A00361B2F /* CustomNavigationTitleView.swift */,
+				D124509623BD4A1A00361B2F /* SettingsCell.swift */,
+				D124509B23BD4B2D00361B2F /* TableViewTitle.swift */,
+				D124509F23BD6E1200361B2F /* EdgeInsetLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,7 +245,7 @@
 			);
 			name = "Walkie Talkie";
 			productName = "Walkie Talkie";
-			productReference = D162446023B5416200B8199E /* Walkie Talkie.app */;
+			productReference = D162446023B5416200B8199E /* Walkie-Talkie.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -284,15 +348,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D124509C23BD4B2D00361B2F /* TableViewTitle.swift in Sources */,
+				D124509323BD476000361B2F /* Theming.swift in Sources */,
+				D124508F23BD474C00361B2F /* AppTheme.swift in Sources */,
+				D124508823BD46C200361B2F /* SettingsSection.swift in Sources */,
 				D162447C23B55B0A00B8199E /* Extensions.swift in Sources */,
 				D162447A23B55AA700B8199E /* Message.swift in Sources */,
 				D162448323B5B4A700B8199E /* AudioVisualizerView.swift in Sources */,
 				D1D173D823B6DFB5006785A9 /* Constants.swift in Sources */,
+				D124509123BD475800361B2F /* AppThemeProvider.swift in Sources */,
+				D124508023BD40E900361B2F /* UIView+Layout.swift in Sources */,
+				D124509523BD48F900361B2F /* AppStoreReviewManager.swift in Sources */,
+				D124508223BD429F00361B2F /* SettingsController.swift in Sources */,
+				D124508423BD437A00361B2F /* CustomNavigationTitleView.swift in Sources */,
 				D162446823B5416200B8199E /* ViewController.swift in Sources */,
 				D1D173DF23B7F211006785A9 /* UDPSocket.swift in Sources */,
+				D124509723BD4A1A00361B2F /* SettingsCell.swift in Sources */,
 				D1B78A2A23B9A8DA00E32728 /* DYScrollRulerView.swift in Sources */,
+				D124508623BD46AD00361B2F /* SettingsItemSection.swift in Sources */,
 				D162446423B5416200B8199E /* AppDelegate.swift in Sources */,
+				D124508D23BD474200361B2F /* Weak.swift in Sources */,
+				D124508B23BD473200361B2F /* SubscribableValue.swift in Sources */,
+				D124509E23BD678800361B2F /* AppNavigationController.swift in Sources */,
 				D1B78A2223B97E4A00E32728 /* LengthUnitLayer.swift in Sources */,
+				D124509A23BD4A6A00361B2F /* FloatingButton.swift in Sources */,
+				D12450A023BD6E1200361B2F /* EdgeInsetLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,11 +422,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sebastien Menozzi (2TE7AHNP9P)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/Walkie Talkie/Frameworks/lame.framework\"";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -405,11 +486,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sebastien Menozzi (2TE7AHNP9P)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/Walkie Talkie/Frameworks/lame.framework\"";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -435,16 +517,18 @@
 			baseConfigurationReference = 55F3994FB2707EB26B190978 /* Pods-Walkie Talkie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.0;
 				DEVELOPMENT_TEAM = 2TE7AHNP9P;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Walkie Talkie/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sebmenozzi.Walkie-Talkie2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sebmenozzi.walkie-talkie";
+				PRODUCT_NAME = "Walkie-Talkie";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_VERSION = 5.0;
@@ -457,16 +541,18 @@
 			baseConfigurationReference = 6D92BCC1F0E131192BBBEEC0 /* Pods-Walkie Talkie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.0;
 				DEVELOPMENT_TEAM = 2TE7AHNP9P;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Walkie Talkie/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sebmenozzi.Walkie-Talkie2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sebmenozzi.walkie-talkie";
+				PRODUCT_NAME = "Walkie-Talkie";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_VERSION = 5.0;

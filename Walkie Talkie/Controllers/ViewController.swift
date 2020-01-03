@@ -11,6 +11,7 @@ import AVFoundation
 import Accelerate
 import AudioToolbox
 import CocoaAsyncSocket
+import SpriteKit
 
 enum RecordingButtonState {
     case notConnected
@@ -21,6 +22,8 @@ enum RecordingButtonState {
 }
 
 class ViewController: UIViewController {
+    
+    let generator = UIImpactFeedbackGenerator(style: .light)
     
     private var currentChannel: Int = 500
     
@@ -52,9 +55,15 @@ class ViewController: UIViewController {
     // MARK:- connected label
     let connectedLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "GothamRounded-Medium", size: 14)!
-        label.textColor = UIColor(r: 56, g: 202, b: 81)
+        label.font = UIFont(name: "GothamRounded-Bold", size: 14)!
+        label.textColor = UIColor(r: 49, g: 208, b: 90)
         label.translatesAutoresizingMaskIntoConstraints = false
+        
+        label.layer.shadowColor = UIColor.black.cgColor
+        label.layer.shadowRadius = 3.0
+        label.layer.shadowOpacity = 0.2
+        label.layer.shadowOffset = CGSize(width: 0, height: 0)
+        label.layer.masksToBounds = false
         return label
     }()
     
@@ -93,7 +102,9 @@ class ViewController: UIViewController {
     let recordingLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "GothamRounded-Bold", size: 18)!
-        label.text = "PUSH TO TALK"
+        label.text = NSLocalizedString("PUSH TO TALK", comment: "")
+        label.adjustsFontSizeToFitWidth = true
+        label.textAlignment = .center
         label.textColor = UIColor(white: 0, alpha: 0.4)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -101,15 +112,68 @@ class ViewController: UIViewController {
     
     private func setupRecordingButton() {
         view.addSubview(recordingButton)
-        recordingButton.addSubview(recordingLabel)
-        
         recordingButton.widthAnchor.constraint(equalToConstant: recordingButtonSize).isActive = true
         recordingButton.heightAnchor.constraint(equalToConstant: recordingButtonSize).isActive = true
+        recordingButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -120).isActive = true
         recordingButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        recordingButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         
+        recordingButton.addSubview(recordingLabel)
         recordingLabel.centerYAnchor.constraint(equalTo: recordingButton.centerYAnchor).isActive = true
         recordingLabel.centerXAnchor.constraint(equalTo: recordingButton.centerXAnchor).isActive = true
+        recordingLabel.widthAnchor.constraint(equalToConstant: recordingButtonSize - 40).isActive = true
+        
+        let spacing: CGFloat = recordingButtonSize / 9
+        let points = [
+            [-3, 0],
+            [-3, -spacing],
+            [-3, spacing],
+            
+            [-2, 0],
+            [-2, -spacing],
+            [-2, -2 * spacing],
+            [-2, spacing],
+            [-2, 2 * spacing],
+            
+            [-1, 0],
+            [-1, -spacing],
+            [-1, -2 * spacing],
+            [-1, -3 * spacing],
+            [-1, spacing],
+            [-1, 2 * spacing],
+            [-1, 3 * spacing],
+            
+            [1, 0],
+            [1, -spacing],
+            [1, -2 * spacing],
+            [1, -3 * spacing],
+            [1, spacing],
+            [1, 2 * spacing],
+            [1, 3 * spacing],
+            
+            [2, 0],
+            [2, -spacing],
+            [2, -2 * spacing],
+            [2, spacing],
+            [2, 2 * spacing],
+            
+            [3, 0],
+            [3, -spacing],
+            [3, spacing],
+        ]
+        for i in 0 ..< points.count {
+            let size: CGFloat = 9
+            
+            let view = UIView()
+            view.makeCorner(withRadius: size / 2)
+            view.backgroundColor = UIColor(white: 0, alpha: 0.5)
+            view.translatesAutoresizingMaskIntoConstraints = false
+            
+            recordingButton.addSubview(view)
+            view.centerYAnchor.constraint(equalTo: recordingButton.centerYAnchor, constant: CGFloat(points[i][0]) * spacing).isActive = true
+            view.centerXAnchor.constraint(equalTo: recordingButton.centerXAnchor, constant: CGFloat(points[i][1])).isActive = true
+            view.widthAnchor.constraint(equalToConstant: size).isActive = true
+            view.heightAnchor.constraint(equalToConstant: size).isActive = true
+        }
     }
     
     // MARK:- On/Off Button
@@ -127,12 +191,6 @@ class ViewController: UIViewController {
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
         
-        view.layer.shadowPath = UIBezierPath(roundedRect: view.bounds, cornerRadius: onoffButtonSize / 2).cgPath
-        view.layer.shadowColor = UIColor(r: 236, g: 60, b: 68).cgColor
-        view.layer.shadowOpacity = 0.1
-        view.layer.shadowOffset = CGSize(width: 0, height: 0)
-        view.layer.shadowRadius = 5.0
-        view.layer.masksToBounds = false
         return view
     }()
     
@@ -163,7 +221,7 @@ class ViewController: UIViewController {
     fileprivate func setupAudioView() {
         audioView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(audioView)
-        audioView.bottomAnchor.constraint(equalTo: onoffButton.topAnchor).isActive = true
+        audioView.bottomAnchor.constraint(equalTo: recordingButton.topAnchor).isActive = true
         audioView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         audioView.heightAnchor.constraint(equalToConstant: 135).isActive = true
         audioView.isHidden = true
@@ -193,7 +251,7 @@ class ViewController: UIViewController {
         self.socket?.send(message: "PING")
     }
     
-    lazy var lazyTimeRullerView:DYScrollRulerView = { [unowned self] in
+    lazy var lazyTimeRullerView: DYScrollRulerView = { [unowned self] in
         let unitStr = "Hz"
         
         let screenHeight = UIScreen.main.bounds.height
@@ -203,7 +261,7 @@ class ViewController: UIViewController {
         let window = UIApplication.shared.keyWindow
         let topPadding: Int = Int(window?.safeAreaInsets.top ?? 0)
         
-        var frame = CGRect(x: margin / 2, y: topPadding + 30, width: Int(screenWidth) - margin, height: DYScrollRulerView.rulerViewHeight())
+        var frame = CGRect(x: margin / 2, y: topPadding + 60, width: Int(screenWidth) - margin, height: DYScrollRulerView.rulerViewHeight())
         var timerView = DYScrollRulerView(frame: frame, tminValue: 0, tmaxValue: 1000, tstep: 1, tunit: unitStr, tNum: 5, viewcontroller: self)
         timerView.setDefaultValueAndAnimated(defaultValue: Float(currentChannel), animated: true)
         timerView.delegate      = self
@@ -211,17 +269,93 @@ class ViewController: UIViewController {
         
         return timerView
     }()
+    
+    // settings button
+        
+    private lazy var settingsButtonView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .clear
+        view.makeCorner(withRadius: 17.5)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        let tap = UILongPressGestureRecognizer(target: self, action: #selector(handleTapSettings))
+        tap.minimumPressDuration = 0
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+        return view
+    }()
+    
+    let settingsIconImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "settings")!.withRenderingMode(.alwaysTemplate)
+        imageView.contentMode = .scaleAspectFit
+        imageView.tintColor = .white
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
+    private func setupSettingsButton() {
+        view.addSubview(settingsButtonView)
+        settingsButtonView.addSubview(settingsIconImageView)
+        
+        settingsButtonView.widthAnchor.constraint(equalToConstant: 35).isActive = true
+        settingsButtonView.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        settingsButtonView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 5).isActive = true
+        settingsButtonView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -15).isActive = true
+        
+        settingsIconImageView.widthAnchor.constraint(equalToConstant: 18).isActive = true
+        settingsIconImageView.heightAnchor.constraint(equalToConstant: 18).isActive = true
+        settingsIconImageView.centerYAnchor.constraint(equalTo: settingsButtonView.centerYAnchor).isActive = true
+        settingsIconImageView.centerXAnchor.constraint(equalTo: settingsButtonView.centerXAnchor).isActive = true
+        
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        settingsButtonView.insertSubview(blurEffectView, at: 0)
+        blurEffectView.fillSuperview()
+    }
+    
+    @objc func handleTapSettings(gesture: UILongPressGestureRecognizer) {
+        if gesture.state == .began {
+            settingsButtonView.animateButtonDown(scale: 0.9)
+        } else if gesture.state == .ended {
+            settingsButtonView.animateButtonUp()
+            
+            print("Open")
+            
+            let settingsController = SettingsController()
+            
+            let navigationController = self.navigationController
+            
+            let transition = CATransition()
+            transition.duration = 0.3
+            transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+            transition.type = CATransitionType.moveIn
+            transition.subtype = CATransitionSubtype.fromTop
+            navigationController?.view.layer.add(transition, forKey: nil)
+            navigationController?.pushViewController(settingsController, animated: false)
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(r: 10, g: 10, b: 10)
+        setUpTheming()
+        
+        AppStoreReviewManager.instance.showReview()
         
         setupRecordingButton()
         
         setupOnOffButton()
         
-        setupAudioView()
+        if UIDevice.current.hasNotch {
+            setupAudioView()
+        }
         
         setupConnectedLabel()
         
@@ -231,9 +365,13 @@ class ViewController: UIViewController {
 
         view.addSubview(lazyTimeRullerView)
         
+        setupSettingsButton()
+        
         setupUDPServer()
         
         socket?.setupConnection()
+        
+        generator.prepare()
     }
     
     // MARK:- api
@@ -249,7 +387,7 @@ class ViewController: UIViewController {
         self.stopPlayer?.prepareToPlay()
 
         do {
-            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .measurement)
+            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .voiceChat)
             try AVAudioSession.sharedInstance().setActive(true)
         } catch let error as NSError {
             print(error.localizedDescription)
@@ -372,16 +510,14 @@ class ViewController: UIViewController {
                 recordingButton.isUserInteractionEnabled = false
                 recordingButton.alpha = 0.5
                 audioView.isHidden = true
-                onoffButton.backgroundColor = UIColor(r: 255, g: 60, b: 68)
-                onoffButton.layer.shadowColor = UIColor(r: 255, g: 60, b: 68).cgColor
+                onoffButton.backgroundColor = AppThemeProvider.shared.currentTheme.cellbackgroundColor
                 lazyTimeRullerView.alpha = 1.0
                 break
             case .connected:
                 recordingButton.isUserInteractionEnabled = true
                 recordingButton.alpha = 1.0
                 audioView.isHidden = true
-                onoffButton.backgroundColor = UIColor(r: 56, g: 202, b: 81)
-                onoffButton.layer.shadowColor = UIColor(r: 56, g: 202, b: 81).cgColor
+                onoffButton.backgroundColor = UIColor(r: 49, g: 208, b: 90)
                 lazyTimeRullerView.alpha = 0.5
                 break
             case .recording:
@@ -462,9 +598,6 @@ class ViewController: UIViewController {
     }
     
     private func vibrateWithHaptic() {
-        let generator = UIImpactFeedbackGenerator(style: .light)
-        generator.prepare()
-        
         generator.impactOccurred()
     }
 }
@@ -472,7 +605,8 @@ class ViewController: UIViewController {
 extension ViewController: UDPSocketDelegate {
     
     func receivedNbClients(nb_clients: Int) {
-        connectedLabel.text = "\(nb_clients) CONNECTED"
+        let connected_string = NSLocalizedString("CONNECTED", comment: "")
+        connectedLabel.text = "\(nb_clients) \(connected_string)"
     }
     
     func receivedPong(time: Int) {
@@ -515,4 +649,17 @@ extension ViewController:DYScrollRulerDelegate {
         currentChannel = value
     }
     
+}
+
+extension ViewController: Themed {
+    
+    func applyTheme(_ theme: AppTheme) {
+        view.backgroundColor = theme.backgroundColor
+        lazyTimeRullerView.backgroundColor = theme.cellbackgroundColor
+        
+        if (onoffButton.backgroundColor != UIColor(r: 49, g: 208, b: 90))
+        {
+            onoffButton.backgroundColor = theme.cellbackgroundColor
+        }
+    }
 }
