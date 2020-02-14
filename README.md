@@ -1,4 +1,4 @@
-# Walkie-Talkie – Do you copy?
+# Walkie-Talkie – Do you copy? 📡
 Talk with your friends!
 
 Developped with 💙 by <a href="https://twitter.com/SebMnzz">Sebastien Menozzi</a>
